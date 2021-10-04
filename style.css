@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kristi&display=swap");
+* {
+  background: #aaa;
+  --primary-color: #e53e2c90;
+  --secundary-color: #363f26;
+  --font-family-primary: "Alegreya", serif;
+}
+
+header,
+.navbar,
+.collapse {
+  background: #363f26;
+}
+
+.banner {
+  background: #363f26;
+}
+
+.banner .container {
+  padding: 10%;
+  background: #363f26;
+}
+
+.box {
+  background: #363f26;
+  border: 10px solid;
+}
+
+text {
+  fill: #aaa;
+  filter: url("#money");
+  font-family: "Playfair Display", "Georgia", serif;
+  font-size: 300%;
+  font-weight: 900;
+}
+
+.skills {
+  background: var(--primary-color);
+  height: 20vh;
+}
+
+.skills .container {
+  background: var(--primary-color);
+}
+
+.skills .container .row .col,
+.skills .container .row .col p,
+.skills .container .row .col svg {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+/* ///////////ABOUT ME///////// */
+
+.about {
+  height: 120vh;
+}
+
+.about__title {
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+  font-size: 10vh;
+  font-family: var(--font-family-primary);
+  font-weight: 900;
+  border-radius: 29px;
+  background: #aaaaaa;
+  box-shadow: inset 5px 5px 10px #8f8f8f, inset -5px -5px 10px #c5c5c5;
+}
+
+.about__title b {
+  font-family: "kristi", cursive;
+  color:#fff ;
+  margin-left: -20px;
+  background: none;
+  font-size: 11vh;
+}
+
+.about .container .row {
+  margin-top: 10%;
+}
+
+.about__text,
+.about__text p,
+.about__text h2 {
+  padding: 30px;
+  text-align: center;
+}
+
+.about__text {
+  border-radius: 29px;
+  background: #aaaaaa;
+  box-shadow: inset 5px 5px 10px #8f8f8f, inset -5px -5px 10px #c5c5c5;
+}
+
+.about__text p {
+  text-align: justify;
+  background: var(--primary-color);
+}
+
+.about__skills {
+  border-radius: 29px;
+  background: #aaaaaa;
+  padding: 30px;
+  box-shadow: inset 5px 5px 10px #8f8f8f, inset -5px -5px 10px #c5c5c5;
+}
+
+.about__skills .col {
+  display: flex;
+}
