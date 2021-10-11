@@ -131,7 +131,7 @@ margin-left: 40%;
   font-family: 'Cinzel', serif;
   font-size: 20px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 100px;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   display: flex;
@@ -251,38 +251,102 @@ color: #1d91d4ef;
 
 /* ABOUT ME */
 
-.about {
- margin-top: 20%;
-
- 
+.about .container{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
-.about svg {
+.about .container .card{
+  position: relative;
   background: none;
+  cursor: pointer;
 }
 
-.about .container .row{
-padding: 10px;
+.about .container .card .face{
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
 }
 
-.about .container .row .col p,
-.about .container .row .col,
-.about .container .row .col h2,
-.about .container .row .col h2 b,
-.about .container .row{
+.about .container .card .face.face1{
+  position: relative;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.about .container .card:hover .face.face1{
+  background: var(--primary-color);
+  transform: translateY(0);
+}
+
+.about .container .card .face.face1 .content{
+  opacity: 0.2;
+  transition: 0.5s;
+}
+
+.about .container .card:hover .face.face1 .content{
+  opacity: 1;
+}
+
+.about .container .card .face.face1 .content img{
+  max-width: 100px;
+}
+
+.about .container .card .face.face1 .content h3{
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.about .container .card .face.face2{
+  position: relative;
+  background:none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  
+  transform: translateY(-100px);
+}
+
+.about .container .card:hover .face.face2{
+  transform: translateY(0);
+}
+
+.about .container .card .face.face2 .content p{
+  margin: 0;
+  padding: 0;
+}
+
+.about .container .card .face.face2 .content a{
+  margin: 15px 0 0;
+  display:  inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.about .container .card .face.face2 .content a:hover{
   background: var(--primary-color);
   color: #fff;
 }
 
-.about .container .row .col h2 {
-  border: 2px solid #000;
-  display: inline;
-
-}
 
 
 
-/* SKILLS */
+
+/* ---------------------------SKILLS ------------------------*/
 .skills {
   padding-top: 100px;
 }
@@ -304,8 +368,8 @@ padding: 10px;
   padding: 10px;
   margin: 10px;
   border-radius: 30px;
-  background: #111111;
-  box-shadow: inset 5px 5px 10px #070707, inset -5px -5px 10px #1b1b1b;
+  
+  
 }
 
 .skills .skills_icons .col p,
@@ -314,7 +378,8 @@ padding: 10px;
 }
 
 
-/* PROYECTS */
+/*----------------- PROYECTS ------------------*/
+
 .proyects{
   padding-top: 100px;
 }
@@ -335,18 +400,113 @@ padding: 10px;
 .proyects_title h3{
   color: var(--primary-color);
   font-family: var(--font-family-primary);
+  padding-bottom: 100px;
 }
 
-.proyects_img img{
-  border: 2px solid #fff;
+.proyects_title .proyects_pages {
+  height: 100vh;
+  width: 100vw;
+  max-height: 800px;
+  
+  max-width: 1280px;
+  min-height: 600px;
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.border {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+.border:hover {
+  border: 1px solid #fff;
+}
+.card {
+  height: 379px;
+  width: 300px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.card0 {
+  background: url(./assets/img/pages/aztecwear.png) center center no-repeat;
+  background-size: 300px;
+}
+.card0:hover {
+  background: url(./assets/img/pages/screenshot-aztecwearus.com-2021.10.11-00_21_22.png) left center no-repeat;
+  background-size: 600px;
+}
+.card0:hover h2 {
+  opacity: 1;
+}
+.card0:hover .fa {
+  opacity: 1;
+}
+.card1 {
+  background: url("https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg") center center no-repeat;
+  background-size: 300px;
+}
+.card1:hover {
+  background: url("https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg") left center no-repeat;
+  background-size: 600px;
+}
+.card1:hover h2 {
+  opacity: 1;
+}
+.card1:hover .fa {
+  opacity: 1;
+}
+.card2 {
+  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") center center no-repeat;
+  background-size: 300px;
+}
+.card2:hover {
+  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") left center no-repeat;
+  background-size: 600px;
+}
+.card2:hover h2 {
+  opacity: 1;
+}
+.card2:hover .fa {
+  opacity: 1;
 }
 
-.proyects_img p{
- 
-  text-align: justify;
- 
+.proyects .card h2 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.fa {
+  opacity: 0;
+  transition: opacity 1s;
+  background: none;
+}
+.icons {
+  position: absolute;
+  fill: #fff;
+  color: #fff;
+  background: none;
+  height: 130px;
+  top: 226px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.proyects_row {
-  padding: 0 10%;
-}

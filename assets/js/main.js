@@ -64,6 +64,7 @@ const phrases = [
   'Freelancer',
   'WordPress Expert',
   'Seller',
+  'layout designer',
   
 ]
 
