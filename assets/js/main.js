@@ -87,12 +87,12 @@ next()
 
 
 var colors = new Array(
-  [255,255,255],
-  [96,96,96,0.226],
-  [255,255,255],
-  [96,96,96,0.226],
-  [255,255,255],
-  [96,96,96,0.226],);
+  [0,0,0,0.226],
+  [46,46,46,0.226],
+  [0,0,0],
+  [46,46,46,0.226],
+  [0,0,0],
+  [46,46,46,0.226],);
 
 var step = 0;
 //color table indices for: 
@@ -103,7 +103,7 @@ var step = 0;
 var colorIndices = [0,1,2,3];
 
 //transition speed
-var gradientSpeed = 0.001;
+var gradientSpeed = 0.005;
 
 function updateGradient()
 {
