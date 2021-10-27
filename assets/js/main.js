@@ -81,3 +81,17 @@ const next = () => {
 
 next()
 
+//--------------------------------
+// MENU NAVBAR RESPONSIVE
+//--------------------------------
+
+var tabs = document.getElementsByClassName('nav-item');
+var activeEl = tabs[0];
+
+function select(el){
+  activeEl.classList.remove('active');
+  activeEl = el;
+  document.body.style.background = activeEl.dataset.color;
+  activeEl.classList.add('active');
+}
+

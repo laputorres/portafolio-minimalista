@@ -34,17 +34,12 @@ p {
 }
 
 /* MENU */
-.et-hero-tabs {
+.nav {
   display: none;
 }
 
 /* MENU END */
 
-.text_up,
-.text_up .container,
-.text_up .container p {
-  background: none;
-}
 
 /* BANNER */
 
@@ -616,4 +611,119 @@ input {
   font-weight: 600;
   border-radius: 5px;
   cursor: pointer;
+}
+
+
+
+
+
+
+/*---------------MEDDLE ---------------------- */
+@media only screen and (max-width:1200px) and (min-width:992px){
+  .nav {
+    display: none;
+  }
+
+  .banner{
+    width: 100%;
+  }
+
+  #more-arrows {
+    display:none;
+  }
+
+  .about .container .card {
+    margin-left: 20PX;
+  }
+
+  
+}
+
+/* -------------- SMAll --------------------- */
+@media only screen and (max-width:991px) and (min-width:768px){
+/* MENU RESPONSIVE */
+.nav {
+  display: none;
+}
+
+#more-arrows {
+  display:none;
+}
+
+
+.form .cuadro2 {
+  width: 10%;
+}
+
+}
+
+@media only screen and (max-width:767px){
+  
+
+.nav {
+  font-size: 12px;
+  background: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 1.5rem;
+  width: 100%;
+  margin: auto;
+  display:flex;
+  flex-flow: row nowrap;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .1);
+  position: fixed;
+  top:90%;
+  z-index: 10000;
+}
+.nav-item {
+  flex: 1 1 25%;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  transition: all 500ms ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+}
+.nav-item .title {
+  display: inline-block;
+  color: transparent;
+  vertical-align:bottom;
+  margin-left: 4px;
+}
+.nav-item.active {
+  flex: 0.000000001 0.00000001 70px;
+}
+.nav-item.active .title {
+  color: inherit;
+}
+.nav-item[data-color="#5b37b7"].active {
+  color: #5b37b7;
+  fill: #5b37b7 !important;
+  background: rgba(91, 55, 183, .3);
+}
+.nav-item[data-color="#c9379d"].active {
+  color: #c9379d;
+  fill: #c9379d !important;
+  background: rgba(201, 55, 157, .3);
+}
+.nav-item[data-color="#e5a919"].active {
+  color: #e5a919;
+  fill: #e5a919 !important;
+  background: rgba(229, 169, 25, .3);
+}
+.nav-item[data-color="#1194aa"].active {
+  color: #1194aa;
+  fill: #1194aa !important;
+  background: rgba(17, 148, 170, .3);
+}
+*[class^="icon-"] {
+  height: 24px;
+  width: 24px;
+}
+
+.skills_icons {
+  width: 100% !important;
+}
+
+
 }
