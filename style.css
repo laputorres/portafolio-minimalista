@@ -628,9 +628,7 @@ input {
     width: 100%;
   }
 
-  #more-arrows {
-    display:none;
-  }
+  
 
   .about .container .card {
     margin-left: 20PX;
@@ -646,10 +644,33 @@ input {
   display: none;
 }
 
-#more-arrows {
-  display:none;
+.banner_border {
+  width: 100%;
+  
 }
 
+.banner_border1 {
+  width: 80%;
+  margin-top: -90%;
+  margin-left: 70%;
+}
+
+.banner_border2{
+  width: 80%;
+  margin-top: -30%;
+}
+
+.banner_title img{
+  width: 100%;
+  margin-top: -150%;
+  margin-left: 35%;
+}
+
+.banner_title h1{
+  font-size: 10vh;
+  margin-top:  -100%;
+  width: 100%;
+}
 
 .form .cuadro2 {
   width: 10%;
